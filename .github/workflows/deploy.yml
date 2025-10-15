@@ -47,8 +47,8 @@ jobs:
       - name: Upload des fichiers
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist 
-  #Job 2 : Déploiement sur GitHub Pages      
+          path: ./dist
+  #Job 2 : Déploiement sur GitHub Pages
   deploy:
     name: Déploiement
     # Ce job attend que le build soit terminé
