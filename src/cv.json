@@ -1,0 +1,126 @@
+{
+  "basics": {
+    "name": "Dylan Dennig",
+    "label": "Développeur Web",
+    "image": "",
+    "email": "dng.dyl@gmail.com",
+    "phone": "0668572263",
+    "summary": "Développeur Web Full Stack en reconversion. Je souhaite poursuivre mon cursus en alternance dans le cadre d'un BAC+3.\nFort d'une solide capacité d'adaptation, je développe des compétences techniques pointues en front-end et back-end.\nMon parcours atypique, enrichi par une licence de psychologie, m'apporte une approche humaine et analytique pour mieux comprendre les besoins utilisateurs, concevoir des interfaces ergonomiques et gérer des projets collaboratifs.\nCette double compétence me permet d'aborder la création de solutions digitales avec rigueur, créativité et empathie.",
+    "location": {
+      "postalCode": "33700",
+      "city": "Mérignac",
+      "region": "Nouvelle-Aquitaine"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Dylan Dennig",
+        "url": "https://www.linkedin.com/in/dylan-dennig/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Super U Saujon",
+      "position": "Hôte de caisse",
+      "startDate": "2021",
+      "endDate": "2024",
+      "summary": "Travail saisonnier"
+    },
+    {
+      "name": "Korian Les Issambres",
+      "position": "Stagiaire en Psychologie",
+      "startDate": "2022",
+      "endDate": "2022",
+      "summary": "Stage en EHPAD, accompagnement des résidents, animation d'ateliers cognitifs et physiques, soutien psychologique aux résidents et à leurs familles."
+    },
+    {
+      "name": "L'Oeillet des Pins",
+      "position": "Stagiaire en Psychologie",
+      "startDate": "2022",
+      "endDate": "2022",
+      "summary": "Stage en EHPAD spécialisé en maladies neurodénégératives type Alzheimer, accompagnement des résidents, animation d'ateliers cognitifs et physiques, soutien psychologique aux résidents et à leurs familles."
+    }
+  ],
+
+  "volunteer": [
+    {
+      "organization": "Dublin Simon Community",
+      "position": "Volunteer",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Aide aux sans-abris, distribution de repas, soutien moral et accompagnement vers les services sociaux. Gestion de la boutique solidaire, tri et vente de vêtements et objets donnés."
+    }
+  ],
+  "education": [
+    {
+      "institution": "MyDigitalSchool",
+      "area": "Développement Web",
+      "studyType": "Bachelor",
+      "startDate": "2025",
+      "endDate": "en cours"
+    },
+    {
+      "institution": "La Piscine",
+      "area": "Développement Web et Mobile",
+      "studyType": "BTS",
+      "startDate": "2024",
+      "endDate": "2025"
+    },
+    {
+      "institution": "Université de Poitiers",
+      "area": "Psychologie",
+      "studyType": "Licence",
+      "startDate": "2019",
+      "endDate": "2021"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Développement Web",
+      "level": "Bachelor",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vue.js",
+        "PHP",
+        "MySQL",
+        "Symfony",
+        "Git",
+        "GitHub",
+        "Figma"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Langue maternelle"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Professionnel"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Musique",
+      "keywords": ["Piano", "Production musicale sur le logiciel FL Studio"]
+    },
+    {
+      "name": "Développement de jeux-vidéo",
+      "keywords": ["Compétences : GDScript (Godot Engine), C# (Unity)"]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "MeloQuest",
+      "startDate": "2024",
+      "endDate": "2025",
+      "description": "Création en autonomie complète d’un site web de partage musical dans le cadre de la validation de mon BAC+2. Le projet inclut diverses fonctionnalités : inscription et connexion des utilisateurs, publication de musiques, système de commentaires, tableau de bord administrateur et outils de modération."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* GRID LAYOUT */
+#cvWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+/* HEADER */
+header {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* SECTION CV PERSO */
+
+#sectionCVperso {
+  grid-column: 1 / span 4;
+  margin-bottom: 20px;
+  height: fit-content;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION CV */
+#sectionCV {
+  grid-column: 5 / span 8;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cvContainers {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.cvBigTitle {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cvTitles {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #000;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
