@@ -1,0 +1,52 @@
+# Nom du workflow (visible dans l'onglet Actions de GitHub)
+name: Déploiement GitHub Pages
+
+# Quand est-ce que ce worflow doit être déclenché ?
+on:
+# À chaque push sur la branche main
+  push:
+    branches: [main]
+# Ou manuellement depuis l'interface GitHub
+  workflow_dispatch:
+
+# Permissions nécessaires pour déployer sur GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Ne permet qu'un seul déploiement à la fois
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Construction
+    runs-on: ubuntu-latest
+    steps:
+    # Etape 1 : Récupérer le code et installer Node.js
+      - name: Récupération du code
+        uses: actions/checkout@v4
+    # Etape 2 : Installer Node.js
+      - name: Installation de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+    # Etape 3 : Installer les dépendances
+      - name: Installation des dépendances
+        run: npm ci
+    # Etape 4 : Construire l'application et déployer sur GitHub Pages
+      - name: Construction de l'application
+        run: npm run build
+    # Etape 5 : Déployer sur GitHub Pages
+      - name: Configuration de GitHub Pages
+        uses: actions/configure-pages@v4
+    # Etape 6 : Uploader les fichiers construits
+    name: Upload des fichiers
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+   
