@@ -37,6 +37,12 @@ jobs:
       # Etape 3 : Installer les dépendances
       - name: Installation des dépendances
         run: npm ci
+      # Etape 3.1 : Vérifications de lint et formatage et bloquer la pipeline si le lint n'est pas respecté
+      - name: Vérification du lint
+        run: npm run lint:check
+      # Etape 3.2 : Vérification du formatage et bloquer la pipeline si le formatage n'est pas respecté
+      - name: Vérification du formatage
+        run: npm run format:check
       # Etape 4 : Construire l'application et déployer sur GitHub Pages
       - name: Construction de l'application
         run: npm run build
